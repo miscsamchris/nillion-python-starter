@@ -12,8 +12,8 @@ from config import (
     CONFIG_PARTY_1,CONFIG_PARTY_2
 )
 
-store_secret_party_1 = importlib.import_module("01_store_secret_party1")
-store_secret_party_n = importlib.import_module("02_store_secret_party_n")
+store_secret_party_1 = importlib.import_module("step_1")
+store_secret_party_n = importlib.import_module("step_2")
 
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '../..')))
 from helpers.nillion_client_helper import create_nillion_client

@@ -21,7 +21,7 @@ async def main():
         getUserKeyFromFile(CONFIG_PARTY_1["userkey_file"]), getNodeKeyFromFile(CONFIG_PARTY_1["nodekey_file"])
     )
 
-    program_name = "millionaires"
+    program_name = "my_first_program"
     
     # Note: check out the code for the full millionaires program in the programs folder
     program_mir_path=f"../../programs-compiled/{CONFIG_PROGRAM_NAME}.nada.bin"

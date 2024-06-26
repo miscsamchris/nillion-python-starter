@@ -179,3 +179,70 @@ Running at process pid: 741
 [2024-06-26T11:24:17Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<80b5aad3-25b4-46c5-ba9f-ea3648c04389> not found
 [2024-06-26T11:24:38Z ERROR p2p_transport::p2p] All retries from HandleWithResponseAndRetry failed for message: SendTransportMessage { receiver: 12D3KooWLnHr5fEXCjz5sbGEg2Jfbd1QmLgiCqy5XK78yfBQd7xj, payload: <omit> error: None }
 [2024-06-26T11:24:51Z ERROR p2p_transport::p2p] All retries from HandleWithResponseAndRetry failed for message: SendTransportMessage { receiver: 12D3KooWLnHr5fEXCjz5sbGEg2Jfbd1QmLgiCqy5XK78yfBQd7xj, payload: <omit> error: None }
+ℹ️ found bin NILLION_DEVNET     -> [/root/.nilup/sdks/latest/nillion-devnet]
+ℹ️ found bin NILLION_CLI        -> [/root/.nilup/sdks/latest/nillion]
+--------------------
+Updating your .env files with nillion-devnet environment info... This may take a minute.
+--------------------
+✔️cluster is running, bootnode is at /ip4/127.0.0.1/tcp/37939/p2p/12D3KooWMvw1hEqm7EWSDEyqTb6pNetUVkepahKY6hixuAuMZfJS
+ℹ️ Cluster has been STARTED (see /tmp/tmp.QqiaO3Xu2H)
+ℹ️cluster id is 9e68173f-9c23-4acc-ba81-4f079b639964
+ℹ️using 256 bit prime
+ℹ️storing state in /tmp/.tmp2O2sHN (79.93Gbs available)
+⛓️starting blockchain node...
+✔️blockchain node running on endpoint http://localhost:61391
+🏃starting node 12D3KooWMvw1hEqm7EWSDEyqTb6pNetUVkepahKY6hixuAuMZfJS
+⏳waiting until bootnode is up...
+🏃starting node 12D3KooWAiwGZUwSUaT2bYVxGS8jmfMrfsanZYkHwH3uL7WJPsFq
+🏃starting node 12D3KooWM3hsAswc7ZT6VpwQ1TCZU4GCYY55nLhcsxCcfjuixW57
+🎁wallet keys written to /tmp/.tmp2O2sHN/private-keys.txt
+📝payments configuration written to /tmp/.tmp2O2sHN/payments-config.yaml
+🥾bootnode config written to /tmp/.tmp2O2sHN/bootnode.yaml
+📝configuration written to /root/.config/nillion/config.yaml
+✔️cluster is running, bootnode is at /ip4/127.0.0.1/tcp/37939/p2p/12D3KooWMvw1hEqm7EWSDEyqTb6pNetUVkepahKY6hixuAuMZfJS
+🔗websocket: /ip4/127.0.0.1/tcp/54936/ws/p2p/12D3KooWMvw1hEqm7EWSDEyqTb6pNetUVkepahKY6hixuAuMZfJS
+Generating node key
+Saving node key to /tmp/tmp.ySp8nlXHgI
+Generating node key
+Saving node key to /tmp/tmp.vtv1IqNKO1
+Generating node key
+Saving node key to /tmp/tmp.dRin8PhUIc
+Generating node key
+Saving node key to /tmp/tmp.hg8IaLi8pP
+Generating node key
+Saving node key to /tmp/tmp.gZilkb7OaG
+Generating user key
+Saving user key to /tmp/tmp.2NfeW1FdmX
+Generating user key
+Saving user key to /tmp/tmp.2CUqOQj039
+Generating user key
+Saving user key to /tmp/tmp.0Sz93InU3R
+Generating user key
+Saving user key to /tmp/tmp.ODj8JBcpT8
+Generating user key
+Saving user key to /tmp/tmp.TlQhLx7hi7
+🔑 Node key and user keys have been generated and added to .env
+Running at process pid: 1295
+-------------------------------------------------------
+                   7MM   7MM                           
+                    MM    MM                           
+              db    MM    MM    db                     
+                    MM    MM                           
+.7MMpMMMb.   7MM    MM    MM   7MM  ,pW-Wq. 7MMpMMMb.  
+  MM    MM    MM    MM    MM    MM 6W'    Wb MM    MM  
+  MM    MM    MM    MM    MM    MM 8M     M8 MM    MM  
+  MM    MM    MM    MM    MM    MM YA.   ,A9 MM    MM  
+.JMML  JMML..JMML..JMML..JMML..JMML. Ybmd9 .JMML  JMML.
+-------------------------------------------------------
+-------------------------------------------------------
+-----------🦆 CONNECTED TO NILLION-DEVNET 🦆-----------
+-------------------------------------------------------
+ℹ️ Your .env file configurations were updated with nillion-devnet connection variables: websocket, cluster id, keys, blockchain info
+💻 The Nillion devnet is still running behind the scenes; to spin down the Nillion devnet at any time, run 'killall nillion-devnet'
+--------------------
+💻 Your Nillion local cluster is still running - process pid: 1295
+ℹ️  Updated your .env file configuration variables: bootnode, cluster id, keys, blockchain info
+[2024-06-26T12:26:08Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<646696dd-2b3c-49cc-9a8a-56fdb9077c5d> not found
+[2024-06-26T12:26:08Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<646696dd-2b3c-49cc-9a8a-56fdb9077c5d> not found
+[2024-06-26T12:26:29Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<646696dd-2b3c-49cc-9a8a-56fdb9077c5d> not found
+[2024-06-26T12:26:29Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<646696dd-2b3c-49cc-9a8a-56fdb9077c5d> not found
