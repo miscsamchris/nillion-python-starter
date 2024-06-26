@@ -9,8 +9,7 @@ import importlib
 from dotenv import load_dotenv
 
 from config import (
-    CONFIG_PARTY_1,
-    CONFIG_N_PARTIES
+    CONFIG_PARTY_1,CONFIG_PARTY_2
 )
 
 store_secret_party_1 = importlib.import_module("01_store_secret_party1")
@@ -66,26 +65,51 @@ async def main(args = None):
 
     print(f"Computing using program {args.program_id}")
 
-    # Also add Bob and Charlie as input parties
+    # Also add Bob as input parties
     party_ids_to_store_ids = {}
     i=0
     for pair in args.party_ids_to_store_ids:
         party_id, store_id = pair.split(':')
-        party_name = CONFIG_N_PARTIES[i]['party_name']
+        party_name = CONFIG_PARTY_2['party_name']
         compute_bindings.add_input_party(party_name, party_id)
         party_ids_to_store_ids[party_id] = store_id
         i=i+1
-
+    print("Rock... Paper ... Scissors :")
+    #Thanks ChatGPT. XD
+    print("1 = Rock")
+    print("    _______")
+    print("---'   ____)")
+    print("      (_____)")
+    print("      (_____)")
+    print("      (____)")
+    print("---.__(___)")
+    print()
+    print("2 = Paper")
+    print("     _______")
+    print("---'    ____)____")
+    print("           ______)")
+    print("          _______)")
+    print("         _______)")
+    print("---.__________)")
+    print()
+    print("3 = Scissors")
+    print("    _______")
+    print("---'   ____)____")
+    print("          ______)")
+    print("       __________)")
+    print("      (____)")
+    print("---.__(___)")
+    print()
+    choice = input("Enter the number corresponding to your choice: ")
     # Add any computation time secrets
     # Alice provides her salary at compute time
     party_name_alice = CONFIG_PARTY_1["party_name"]
-    secret_name_alice = CONFIG_PARTY_1["secret_name"]
-    secret_value_alice = CONFIG_PARTY_1["secret_value"]
     compute_time_secrets = nillion.Secrets({
-        secret_name_alice: nillion.SecretInteger(secret_value_alice)
+        "choice_1": nillion.SecretInteger(int(choice)),
+        "Rock": nillion.SecretInteger(1),
+        "Paper": nillion.SecretInteger(2),
+        "Scissor": nillion.SecretInteger(3),
     })
-
-    print(f"\n🎉 {party_name_alice} provided {secret_name_alice}: {secret_value_alice} as a compute time secret")
 
     # Compute on the secret with all store ids. Note that there are no compute time secrets or public variables
     compute_id = await client_alice.compute(
@@ -107,21 +131,17 @@ async def main(args = None):
             # The compute result is an index
             # Map it to the corresponding party name who should pay for lunch
             # ['Alice', 'Bob', 'Charlie']
-            my_parties = CONFIG_N_PARTIES
-            my_parties.insert(0, CONFIG_PARTY_1)
-            richest_party = my_parties[compute_event.result.value["largest_position"]]["party_name"]
-            print(f"The richest friend is {richest_party}")
-            return richest_party
+            result=compute_event.result.value["Result"]
+            winner="No One"
+            if result==404:
+                print(f"Error with the choices")
+            elif result==0:
+                print(f"Tie!!! No winner")
+            else:
+                winner= "Alice" if result==100 else "Bob"
+                print(f"The Winner is {winner}")
+            return winner
     
 if __name__ == "__main__":
     asyncio.run(main())
 
-@pytest.mark.asyncio
-async def test_main():
-    result = await store_secret_party_1.main()
-    args = ['--user_id_1', result[0], '--program_id', result[1]]
-    result = await store_secret_party_n.main(args)
-    store_ids = result[1].split(' ', 1)
-    args = ['--program_id', result[0], '--party_ids_to_store_ids', store_ids[0], store_ids[1]]
-    result = await main(args)
-    assert result == 'Charlie'

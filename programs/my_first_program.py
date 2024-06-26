@@ -2,11 +2,12 @@ from nada_dsl import *
 
 def nada_main():
     party1 = Party(name="Alice")
+    party2 = Party(name="Bob")
     choice_1 = SecretInteger(Input(name="choice_1", party=party1))
     Rock = SecretInteger(Input(name="Rock", party=party1))
     Paper = SecretInteger(Input(name="Paper", party=party1))
     Scissor = SecretInteger(Input(name="Scissor", party=party1))
-    choice_2 = SecretInteger(Input(name="choice_2", party=party1))
+    choice_2 = SecretInteger(Input(name="choice_2", party=party2))
     tie_condition=choice_1.public_equals(choice_2)
     rock_1_condition=choice_1.public_equals(Rock)
     scissor_2_condition=choice_2.public_equals(Scissor)
