@@ -1,76 +1,107 @@
-# Nillion Python Starter <a href="https://github.com/NillionNetwork/nillion-python-starter/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-blue.svg"></a>
+# Rock, Paper, Scissors Game with Nillion
 
-This is a python starter repo for building on the Nillion Network. Complete environment setup, then run the examples:
+This project is a simple command-line Rock, Paper, Scissors game written in Python. The player can choose rock, paper, or scissors by entering a number (1, 2, or 3). The computer randomly selects its choice, and the winner is determined based on the rules of the game. This version leverages Nillion, a decentralized computing network, for secure and efficient data management.
 
-- To run multi party examples, go to the [multi party compute](examples_and_tutorials/core_concept_multi_party_compute) folder.
+## Features
 
-- To run single party examples, go to the [single party compute](examples_and_tutorials/core_concept_single_party_compute) folder.
+- Player 1 & 2 can choose rock, paper, or scissors using numeric input.
+- The game determines the winner and displays the result.
+- Includes ASCII art for the title and choices.
+- Utilizes Nillion for secure and decentralized data management.
 
-- To run permissions examples (storing and retrieving permissioned secrets, revoking permissions, etc.), go to the [permissions](examples_and_tutorials/core_concept_permissions) folder.
+## Prerequisites
 
-### Prerequisites: Install the CLI Dependencies
+- Python 3.x
+- Nillion SDK 
 
-The `nillion-devnet` tool spins up `anvil` under the hood, so you need to have `foundry` installed. The [`bootstrap-local-environment.sh`](./bootstrap-local-environment.sh) file uses `pidof` and `grep`.
+## How to Run
 
-- [Install `foundry`](https://book.getfoundry.sh/getting-started/installation)
-- [Install `pidof`](https://command-not-found.com/pidof)
-- [Install `grep`](https://command-not-found.com/grep)
+1. Clone the repository.
+2. Open a terminal or command prompt.
+3. Navigate to the directory containing the scripts.
+```bash
+cd ./nillion-python-starter/blob/main/examples_and_tutorials/my_first_program/
+ ```
 
-## Environment Setup
+### Step 1
 
-1. Create a `.env` file by copying the sample:
+- Alice creates and stores program in the network and starts the game.
+- Alice shares the user id and the resulting program id with Bob.
 
-   ```shell
-   cp .env.sample .env
-   ```
+Run the command to perform step 1.
 
-2. Create the virtual environment (`.venv`), install dependencies, and activate the virtual environment
-
-   ```shell
-   bash ./create_venv.sh && source .venv/bin/activate
-   ```
-
-   Run the [`bootstrap-local-environment.sh`](./bootstrap-local-environment.sh) script to spin up `nillion-devnet`, generate keys, and get bootnodes, cluster, and payment info:
-
-   ```shell
-   ./bootstrap-local-environment.sh
-   ```
-
-3. Check `.env` file - keys, bootnodes, cluster, and payment info should now be present. If you want to run against a local cluster, use this configuration. Otherwise, replace values with testnet bootnodes, cluster, and payment info.
-
-4. Look through the [programs](./programs/) folder to see examples of Nada programs.
-
-## Compiling Programs
-
-Nada programs need to be compiled ahead of being stored. Compile all programs in the [programs](./programs/) folder with the script [`compile_programs.sh`](./compile_programs.sh):
-
-```shell
-bash compile_programs.sh
+```bash
+python3 step_1.py
 ```
 
-This generates a `programs-compiled` folder containing the compiled programs.
+### Step 2
 
-## Store a Compiled Program
+- Bob stores the choice in the network as secrets. Each secret is stored with
+  - **bindings** to the Rock Paper Scissors (my_first_program)  program id
+  - **permissions** so Alice can compute using the secret
+- Bob shares thei party_id and secret store_id with Alice.
 
-Store a compiled program in the network with this script:
+The script will provide the command to perform step 2.
 
-```shell
-bash store_program.sh {RELATIVE_COMPILED_PROGRAM_PATH}
+```bash
+python3 step_2.py --user_id_1 {user_id} --program_id {program_id}
 ```
 
-To store the compiled [`addition_simple`](./programs/addition_simple.py) program you can run:
+### Step 3
 
-```shell
-bash store_program.sh programs-compiled/addition_simple.nada.bin
+- Alice runs Rock Paper Scissor (my_first_program) program computation using Bob's choice and provide a choice as a secret at computation time.
+- Alice receives the output result of the program.
+
+The script will provide the command to perform step 3.
+
+```bash
+python3 step_3.py --program_id {program_id} --party_ids_to_store_ids {party_ids_to_store_ids}
 ```
 
-Storing a program results in the stored `program_id`, the network's reference to the program. The `program_id` is the `{user_id}/{program_name}`.
 
-## Testing
+## Game Rules
 
-Most examples and tutorials within this repository can be tested. Docker is required to run the tests.
+- Rock beats Scissors.
+- Scissors beats Paper.
+- Paper beats Rock.
 
-```shell
-cd testing
-bash run_tests.sh
+## Sample Output
+
+```        
+
+1 = Rock
+    _______
+---'   ____)
+      (_____)
+      (_____)
+      (____)
+---.__(___)
+
+2 = Paper
+     _______
+---'    ____)____
+           ______)
+          _______)
+         _______)
+---.__________)
+
+3 = Scissors
+    _______
+---'   ____)____
+          ______)
+       __________)
+      (____)
+---.__(___)
+
 ```
+
+## Nillion Integration
+Nillion is a decentralized computing network that secures high-value data without relying on blockchain technology. Instead, it uses innovative cryptographic methods, particularly a process called "Nil Message Compute," developed by cryptography professor Miguel de Vega. This network allows data to be stored and computed on securely without the need for decryption, enhancing both security and efficiency.
+
+For more information on Nillion, you can visit the [Nillion website](https://nillion.com) or refer to the [Developer Docs](https://docs.nillion.com/quickstart).
+
+## Contributing
+Contributions are welcome! Please feel free to submit a pull request or open an issue to improve the game.
+
+## License
+This project is licensed under the MIT License.
