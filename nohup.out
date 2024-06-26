@@ -1,0 +1,181 @@
+ℹ️ found bin NILLION_DEVNET     -> [/root/.nilup/sdks/latest/nillion-devnet]
+ℹ️ found bin NILLION_CLI        -> [/root/.nilup/sdks/latest/nillion]
+--------------------
+Updating your .env files with nillion-devnet environment info... This may take a minute.
+--------------------
+✔️cluster is running, bootnode is at /ip4/127.0.0.1/tcp/37939/p2p/12D3KooWMvw1hEqm7EWSDEyqTb6pNetUVkepahKY6hixuAuMZfJS
+ℹ️ Cluster has been STARTED (see /tmp/tmp.CVm9iVYEbI)
+ℹ️cluster id is 9e68173f-9c23-4acc-ba81-4f079b639964
+ℹ️using 256 bit prime
+ℹ️storing state in /tmp/.tmpNVJY8o (79.93Gbs available)
+⛓️starting blockchain node...
+✔️blockchain node running on endpoint http://localhost:61391
+🏃starting node 12D3KooWMvw1hEqm7EWSDEyqTb6pNetUVkepahKY6hixuAuMZfJS
+⏳waiting until bootnode is up...
+🏃starting node 12D3KooWAiwGZUwSUaT2bYVxGS8jmfMrfsanZYkHwH3uL7WJPsFq
+🏃starting node 12D3KooWM3hsAswc7ZT6VpwQ1TCZU4GCYY55nLhcsxCcfjuixW57
+🎁wallet keys written to /tmp/.tmpNVJY8o/private-keys.txt
+📝payments configuration written to /tmp/.tmpNVJY8o/payments-config.yaml
+🥾bootnode config written to /tmp/.tmpNVJY8o/bootnode.yaml
+📝configuration written to /root/.config/nillion/config.yaml
+✔️cluster is running, bootnode is at /ip4/127.0.0.1/tcp/37939/p2p/12D3KooWMvw1hEqm7EWSDEyqTb6pNetUVkepahKY6hixuAuMZfJS
+🔗websocket: /ip4/127.0.0.1/tcp/54936/ws/p2p/12D3KooWMvw1hEqm7EWSDEyqTb6pNetUVkepahKY6hixuAuMZfJS
+Generating node key
+Saving node key to /tmp/tmp.uO3WPlV8C5
+Generating node key
+Saving node key to /tmp/tmp.jBvsKy3zHz
+Generating node key
+Saving node key to /tmp/tmp.cdaVa1rRRf
+Generating node key
+Saving node key to /tmp/tmp.lD9Bk7KsN3
+Generating node key
+Saving node key to /tmp/tmp.EU41ByLQr9
+Generating user key
+Saving user key to /tmp/tmp.ElhglTdPNj
+Generating user key
+Saving user key to /tmp/tmp.GHN0RtIq1T
+Generating user key
+Saving user key to /tmp/tmp.oqGECZhzn8
+Generating user key
+Saving user key to /tmp/tmp.Dk5aozcBxv
+Generating user key
+Saving user key to /tmp/tmp.ZjxreZIBYA
+🔑 Node key and user keys have been generated and added to .env
+Running at process pid: 741
+-------------------------------------------------------
+                   7MM   7MM                           
+                    MM    MM                           
+              db    MM    MM    db                     
+                    MM    MM                           
+.7MMpMMMb.   7MM    MM    MM   7MM  ,pW-Wq. 7MMpMMMb.  
+  MM    MM    MM    MM    MM    MM 6W'    Wb MM    MM  
+  MM    MM    MM    MM    MM    MM 8M     M8 MM    MM  
+  MM    MM    MM    MM    MM    MM YA.   ,A9 MM    MM  
+.JMML  JMML..JMML..JMML..JMML..JMML. Ybmd9 .JMML  JMML.
+-------------------------------------------------------
+-------------------------------------------------------
+-----------🦆 CONNECTED TO NILLION-DEVNET 🦆-----------
+-------------------------------------------------------
+ℹ️ Your .env file configurations were updated with nillion-devnet connection variables: websocket, cluster id, keys, blockchain info
+💻 The Nillion devnet is still running behind the scenes; to spin down the Nillion devnet at any time, run 'killall nillion-devnet'
+--------------------
+💻 Your Nillion local cluster is still running - process pid: 741
+ℹ️  Updated your .env file configuration variables: bootnode, cluster id, keys, blockchain info
+[2024-06-26T09:06:11Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<040499e5-2bf4-45ef-8f04-3394b8bc20e5> not found
+[2024-06-26T09:06:11Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<040499e5-2bf4-45ef-8f04-3394b8bc20e5> not found
+[2024-06-26T09:06:11Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<040499e5-2bf4-45ef-8f04-3394b8bc20e5> not found
+[2024-06-26T09:06:31Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<040499e5-2bf4-45ef-8f04-3394b8bc20e5> not found
+[2024-06-26T09:07:06Z ERROR p2p_transport::p2p] All retries from HandleWithResponseAndRetry failed for message: SendTransportMessage { receiver: 12D3KooWLnHr5fEXCjz5sbGEg2Jfbd1QmLgiCqy5XK78yfBQd7xj, payload: <omit> error: None }
+[2024-06-26T11:07:48Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<a82872a6-8e37-4cf2-ad2f-067da715c083> not found
+[2024-06-26T11:07:48Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<a82872a6-8e37-4cf2-ad2f-067da715c083> not found
+[2024-06-26T11:08:08Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<a82872a6-8e37-4cf2-ad2f-067da715c083> not found
+[2024-06-26T11:08:08Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<a82872a6-8e37-4cf2-ad2f-067da715c083> not found
+[2024-06-26T11:08:42Z ERROR p2p_transport::p2p] All retries from HandleWithResponseAndRetry failed for message: SendTransportMessage { receiver: 12D3KooWLnHr5fEXCjz5sbGEg2Jfbd1QmLgiCqy5XK78yfBQd7xj, payload: <omit> error: None }
+[2024-06-26T11:11:17Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:11:18Z ERROR nmc_runtime::actions::store_secret::store_secret_action] ComputeUnexpectedError { msg: "party Party1 is not valid for this program" }
+[2024-06-26T11:11:18Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreSecretCompute<9571e856-27af-42b2-93c8-053d913c6bff> not found
+[2024-06-26T11:11:18Z ERROR node::services::particles] Failed to delete particle 9571e856-27af-42b2-93c8-053d913c6bff: Failure deleting row
+[2024-06-26T11:11:18Z ERROR node::managers::compute::actions::store_secret::handlers] Failed to rollback particle creation: internal error
+[2024-06-26T11:11:18Z ERROR node::services::particles] Failed to delete particle 9571e856-27af-42b2-93c8-053d913c6bff: Failure deleting row
+[2024-06-26T11:11:18Z ERROR node::managers::compute::actions::store_secret::handlers] Failed to rollback particle creation: internal error
+[2024-06-26T11:11:18Z ERROR nmc_runtime::actions::store_secret::store_secret_action] ComputeUnexpectedError { msg: "party Party1 is not valid for this program" }
+[2024-06-26T11:11:18Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreSecretCompute<9571e856-27af-42b2-93c8-053d913c6bff> not found
+[2024-06-26T11:11:18Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreSecretCompute<9571e856-27af-42b2-93c8-053d913c6bff> not found
+[2024-06-26T11:11:18Z ERROR node::services::particles] Failed to delete particle 9571e856-27af-42b2-93c8-053d913c6bff: Failure deleting row
+[2024-06-26T11:11:18Z ERROR node::managers::compute::actions::store_secret::handlers] Failed to rollback particle creation: internal error
+[2024-06-26T11:12:02Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<7ee9599a-9130-4173-b068-69970be8474c> not found
+[2024-06-26T11:12:02Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<7ee9599a-9130-4173-b068-69970be8474c> not found
+[2024-06-26T11:12:03Z ERROR nmc_runtime::actions::store_secret::store_secret_action] ComputeUnexpectedError { msg: "party Party1 is not valid for this program" }
+[2024-06-26T11:12:03Z ERROR nmc_runtime::actions::store_secret::store_secret_action] ComputeUnexpectedError { msg: "party Party1 is not valid for this program" }
+[2024-06-26T11:12:03Z ERROR nmc_runtime::actions::store_secret::store_secret_action] ComputeUnexpectedError { msg: "party Party1 is not valid for this program" }
+[2024-06-26T11:12:03Z ERROR node::services::particles] Failed to delete particle ed7d4baa-b057-49eb-b872-a6640a121db1: Failure deleting row
+[2024-06-26T11:12:03Z ERROR node::managers::compute::actions::store_secret::handlers] Failed to rollback particle creation: internal error
+[2024-06-26T11:12:03Z ERROR node::services::particles] Failed to delete particle ed7d4baa-b057-49eb-b872-a6640a121db1: Failure deleting row
+[2024-06-26T11:12:03Z ERROR node::managers::compute::actions::store_secret::handlers] Failed to rollback particle creation: internal error
+[2024-06-26T11:12:03Z ERROR node::services::particles] Failed to delete particle ed7d4baa-b057-49eb-b872-a6640a121db1: Failure deleting row
+[2024-06-26T11:12:03Z ERROR node::managers::compute::actions::store_secret::handlers] Failed to rollback particle creation: internal error
+[2024-06-26T11:12:03Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:11Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<e859549a-ecca-428c-88e2-548c0629655d> not found
+[2024-06-26T11:12:11Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<e859549a-ecca-428c-88e2-548c0629655d> not found
+[2024-06-26T11:12:11Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<e859549a-ecca-428c-88e2-548c0629655d> not found
+[2024-06-26T11:12:12Z ERROR nmc_runtime::actions::store_secret::store_secret_action] ComputeUnexpectedError { msg: "party Party1 is not valid for this program" }
+[2024-06-26T11:12:12Z ERROR nmc_runtime::actions::store_secret::store_secret_action] ComputeUnexpectedError { msg: "party Party1 is not valid for this program" }
+[2024-06-26T11:12:12Z ERROR nmc_runtime::actions::store_secret::store_secret_action] ComputeUnexpectedError { msg: "party Party1 is not valid for this program" }
+[2024-06-26T11:12:12Z ERROR node::services::particles] Failed to delete particle 49bbedb8-3dd7-4453-a17b-44dff123788c: Failure deleting row
+[2024-06-26T11:12:12Z ERROR node::managers::compute::actions::store_secret::handlers] Failed to rollback particle creation: internal error
+[2024-06-26T11:12:12Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreSecretCompute<49bbedb8-3dd7-4453-a17b-44dff123788c> not found
+[2024-06-26T11:12:12Z ERROR node::services::particles] Failed to delete particle 49bbedb8-3dd7-4453-a17b-44dff123788c: Failure deleting row
+[2024-06-26T11:12:12Z ERROR node::managers::compute::actions::store_secret::handlers] Failed to rollback particle creation: internal error
+[2024-06-26T11:12:12Z ERROR node::services::particles] Failed to delete particle 49bbedb8-3dd7-4453-a17b-44dff123788c: Failure deleting row
+[2024-06-26T11:12:12Z ERROR node::managers::compute::actions::store_secret::handlers] Failed to rollback particle creation: internal error
+[2024-06-26T11:12:12Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:22Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<7ee9599a-9130-4173-b068-69970be8474c> not found
+[2024-06-26T11:12:31Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<e859549a-ecca-428c-88e2-548c0629655d> not found
+[2024-06-26T11:12:31Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:32Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:32Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:32Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:39Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:40Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:40Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:40Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:55Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<a813f6e9-19ff-4370-bc76-ff8c0540e989> not found
+[2024-06-26T11:12:55Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<a813f6e9-19ff-4370-bc76-ff8c0540e989> not found
+[2024-06-26T11:12:57Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:58Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:58Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:12:58Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:13:07Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<0d286abb-ccf0-4b17-b71e-8705bde8d835> not found
+[2024-06-26T11:13:07Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<0d286abb-ccf0-4b17-b71e-8705bde8d835> not found
+[2024-06-26T11:13:08Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:13:09Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:13:09Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:13:09Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:13:16Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<a813f6e9-19ff-4370-bc76-ff8c0540e989> not found
+[2024-06-26T11:13:16Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<a813f6e9-19ff-4370-bc76-ff8c0540e989> not found
+[2024-06-26T11:13:28Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<0d286abb-ccf0-4b17-b71e-8705bde8d835> not found
+[2024-06-26T11:13:28Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<0d286abb-ccf0-4b17-b71e-8705bde8d835> not found
+[2024-06-26T11:13:50Z ERROR p2p_transport::p2p] All retries from HandleWithResponseAndRetry failed for message: SendTransportMessage { receiver: 12D3KooWLnHr5fEXCjz5sbGEg2Jfbd1QmLgiCqy5XK78yfBQd7xj, payload: <omit> error: None }
+[2024-06-26T11:14:02Z ERROR p2p_transport::p2p] All retries from HandleWithResponseAndRetry failed for message: SendTransportMessage { receiver: 12D3KooWLnHr5fEXCjz5sbGEg2Jfbd1QmLgiCqy5XK78yfBQd7xj, payload: <omit> error: None }
+[2024-06-26T11:22:28Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:22:29Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:22:29Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:22:29Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:22:55Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:22:56Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:22:56Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:22:56Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:13Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<7be35531-55a6-437f-b381-ec3b33885646> not found
+[2024-06-26T11:23:13Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<7be35531-55a6-437f-b381-ec3b33885646> not found
+[2024-06-26T11:23:14Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:15Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:15Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:15Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:29Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<d8aa6333-25e8-46cb-95d1-40b1b05de796> not found
+[2024-06-26T11:23:29Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<d8aa6333-25e8-46cb-95d1-40b1b05de796> not found
+[2024-06-26T11:23:30Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:31Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:31Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:31Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:33Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<7be35531-55a6-437f-b381-ec3b33885646> not found
+[2024-06-26T11:23:33Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<7be35531-55a6-437f-b381-ec3b33885646> not found
+[2024-06-26T11:23:44Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<cec71a07-809f-4ab9-b4ed-a832ec5aaaac> not found
+[2024-06-26T11:23:44Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<cec71a07-809f-4ab9-b4ed-a832ec5aaaac> not found
+[2024-06-26T11:23:44Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<cec71a07-809f-4ab9-b4ed-a832ec5aaaac> not found
+[2024-06-26T11:23:45Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:46Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:46Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:46Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:49Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<d8aa6333-25e8-46cb-95d1-40b1b05de796> not found
+[2024-06-26T11:23:49Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<d8aa6333-25e8-46cb-95d1-40b1b05de796> not found
+[2024-06-26T11:23:57Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<80b5aad3-25b4-46c5-ba9f-ea3648c04389> not found
+[2024-06-26T11:23:57Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<80b5aad3-25b4-46c5-ba9f-ea3648c04389> not found
+[2024-06-26T11:23:58Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:59Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:59Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:23:59Z ERROR node::managers::coordination::handlers] Failed to update commit offset: executing query: error returned from database: (code: 1) no such table: preprocessing_offsets
+[2024-06-26T11:24:04Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<cec71a07-809f-4ab9-b4ed-a832ec5aaaac> not found
+[2024-06-26T11:24:17Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<80b5aad3-25b4-46c5-ba9f-ea3648c04389> not found
+[2024-06-26T11:24:17Z ERROR node::managers::compute::handlers::compute] Failed to process message: task StoreProgramCompute<80b5aad3-25b4-46c5-ba9f-ea3648c04389> not found
+[2024-06-26T11:24:38Z ERROR p2p_transport::p2p] All retries from HandleWithResponseAndRetry failed for message: SendTransportMessage { receiver: 12D3KooWLnHr5fEXCjz5sbGEg2Jfbd1QmLgiCqy5XK78yfBQd7xj, payload: <omit> error: None }
+[2024-06-26T11:24:51Z ERROR p2p_transport::p2p] All retries from HandleWithResponseAndRetry failed for message: SendTransportMessage { receiver: 12D3KooWLnHr5fEXCjz5sbGEg2Jfbd1QmLgiCqy5XK78yfBQd7xj, payload: <omit> error: None }
