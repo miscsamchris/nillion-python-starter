@@ -1,14 +1,35 @@
 from nada_dsl import *
 
 def nada_main():
-    party1 = Party(name="Party1")
-    n = SecretInteger(Input(name="n", party=party1))
-    if n <= Integer(1):
-        return [Output(n, "fibonacci_output", party1)]
-    else:
-        a, b = Integer(0), Integer(1)
-        counter=2
-        while((n+Integer(1)<Integer(counter))):
-            a, b = b, a + b
-            counter+=1
-    return [Output(b, "fibonacci_output", party1)]
+    party1 = Party(name="Alice")
+    choice_1 = SecretInteger(Input(name="choice_1", party=party1))
+    Rock = SecretInteger(Input(name="Rock", party=party1))
+    Paper = SecretInteger(Input(name="Paper", party=party1))
+    Scissor = SecretInteger(Input(name="Scissor", party=party1))
+    choice_2 = SecretInteger(Input(name="choice_2", party=party1))
+    tie_condition=choice_1.public_equals(choice_2)
+    rock_1_condition=choice_1.public_equals(Rock)
+    scissor_2_condition=choice_2.public_equals(Scissor)
+    paper_1_condition=choice_1.public_equals(Paper)
+    rock_2_condition=choice_2.public_equals(Rock)
+    scissor_1_condition=choice_1.public_equals(Scissor)
+    paper_2_condition=choice_2.public_equals(Paper)
+    # result=tie_condition.if_else(SecretBlob(bytearray("It's a Tie","utf-8")),SecretBlob(bytearray("Not a Tie","utf-8")))
+    result=tie_condition.if_else(Integer(0),
+      rock_1_condition.if_else(
+        scissor_2_condition.if_else(
+          Integer(100),Integer(200)
+        ),
+        paper_1_condition.if_else(
+          rock_2_condition.if_else(
+            Integer(100),Integer(200)
+          ),
+          scissor_1_condition.if_else(
+            paper_2_condition.if_else(
+              Integer(100),Integer(200)
+            ),Integer(404)
+          )
+        )
+      )
+    )
+    return [Output(result, "Result", party1)]
